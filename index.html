@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI ASSIGNMENT-02</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <h1 class="title">HCI ASSIGNMENT-02</h1>
+</head>
+<body>
+    <div class="menu">
+        <div class="instruction">
+            <h1>Seminar and Lunch Form</h1>
+            <p>Please fill the form with the required information.</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Personal Information &nbsp;<img src="personal.png" class="logo"/></legend>
+                <label for="fullname">Enter your full name: <input type="text" name="fullname" required/></label>
+                <br>
+                <label for="student_id">Enter your student ID: <input type="number" name="student_id" required/></label>
+                <br>
+                <label for="email">Enter your email address: <input type="email" name="email" required/></label>
+                <br>
+                <label for="major">Select your major: 
+                    <select name="major" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Computer Science</option>
+                        <option value="2">Business Information Systems</option>
+                        <option value="3">Digital Business</option>
+                        <option value="4">Communications</option>
+                        <option value="5">Fashion</option>
+                        <option value="6">Accounting</option>
+                        <option value="7">Finance</option>
+                        <option value="8">International Business</option>
+                        <option value="9">Graphic Design and New Media</option>
+                    </select>
+                </label>
+                <br>
+                <label for="birthdate">Enter your birth date: <input type="date" name="birthdate" required/> </label>
+            </fieldset>
+
+        <p><b>The following table shows the schedule for each seminar. 
+            Please read it carefully before choosing the seminar that you want to attend.</b></p>
+        <table>
+            <tr>
+                <th><b>No.</b></th>
+                <th><b>Date</b></th>
+                <th><b>Topic</b></th>
+                <th><b>Time</b></th>
+                <th><b>Speaker 1</b> </th>
+                <th><b>Speaker 2</b></th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th rowspan="3">October 2<sup>nd</sup>, 2023</th>
+                <th>The Uses of AI</th>
+                <th>09.30 A.M. - 10.30 A.M.</th>
+                <th colspan="2">Mr.Lie</th>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <th>Business Entrepreneurship</th>
+                <th>10.30 A.M. - 11.30 A.M.</th>
+                <th>Mr.Ang</th>
+                <th>Ms.Julie</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th>Time and Resource Management</th>
+                <th>12.00 P.M. - 01.30 P.M</th>
+                <th rowspan="2" colspan="2">Mr.Hans</th>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <th rowspan="2">October 4<sup>th</sup>, 2023</th>
+                <th>Innovation Designs</th>
+                <th rowspan="2">09.00 A.M. - 10.30 A.M</th>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <th>Personal Branding</th>
+                <th>Ms.Li</th>
+                <th>Ms.Chen</th>
+            </tr>
+        </table>
+        
+
+            <fieldset>
+                <legend>Seminar Information &nbsp;<img src="seminar.png" class="logo"/></legend>
+                <label for="amount_q">Check all the seminars that you want to attend.</label>
+                    <br>
+                    <input type="checkbox" name="amount_1" /><label for="amount_1">Seminar 1</label> &emsp; &emsp;
+                    <input type="checkbox" name="amount_2" /><label for="amount_2">Seminar 2</label> &emsp; &emsp;
+                    <input type="checkbox" name="amount_3" /><label for="amount_3">Seminar 3</label> &emsp; &emsp;
+                    <input type="checkbox" name="amount_4" /><label for="amount_4">Seminar 4</label> &emsp; &emsp;
+                    <input type="checkbox" name="amount_5" /><label for="amount_5">Seminar 5</label>
+                <br><br><br>
+                <label for="reason">Enter your reason of joining each seminar: 
+                    <br>
+                    <textarea name="reason" rows="5" cols="50" placeholder="I love the topic..." required></textarea>
+                </label>
+            </fieldset>
+
+        <p><b>The following table shows the menus for each lunch. 
+            Please choose the meal that you want to have.</b></p>
+        <table border="1">
+            <tr>
+                <th><b>Seminar No.</b></th>
+                <th><b>Date</b></th>
+                <th><b>Menu A</b></th>
+                <th><b>Menu B</b></th>
+                <th><b>Menu C</b></th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th rowspan="3">October 2<sup>nd</sup>, 2023</th>
+                <th rowspan="3">Chicken Burger with Fries <br><img src="chicken burger with fries.png"/> </th>
+                <th rowspan="3">Pumpkin Soup with Rice <br> <img src="Pumpkin Soup.jpg"/></th>
+                <th rowspan="3">Spaghetti and Meatballs <br> <img src="spaghetti and meatballs.jpg"/></th>
+            </tr>
+            <tr>
+                <th>2.</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <th rowspan="2">October 4<sup>th</sup>, 2023</th>
+                <th rowspan="2">Macaroni and Cheese <br> <img src="macaroni.jpg"/></th>
+                <th rowspan="2">Fish and Chips <br><img src="fish and chips.jpg"/> </th>
+                <th rowspan="2">Mapo Tofu and Rice <br> <img src="mapo tofu.jpg"/></th>
+            </tr>
+            <tr>
+                <th>5.</th>
+            </tr>
+        </table>
+
+            <fieldset>
+                <legend>Lunch Information &nbsp; <img src="lunch.png" class="logo"/></legend>
+                <label for="date_q">Check all the dates that you have a seminar on.</label>
+                    <br>
+                    <input type="checkbox" name="date_1" /><label for="date_1">October 2<sp>nd</sp>, 2023</label> &emsp; &emsp;
+                    <input type="checkbox" name="date_2" /><label for="date_2">October 4<sp>th</sp>, 2023</label>
+                <br><br><br>
+                <label for="menu_oct2">Select your menu for October 2<sup>nd</sup>, 2023: </label>
+                    <br>
+                    <input type="radio" id="oct2_menu0" name="oct2_menu" checked><label>None</label> &emsp; &emsp;
+                    <input type="radio" id="oct2_menuA" name="oct2_menu"><label>Menu A</label> &emsp; &emsp;
+                    <input type="radio" id="oct2_menuB" name="oct2_menu"><label>Menu B</label> &emsp; &emsp;
+                    <input type="radio" id="oct2_menuC" name="oct2_menu"><label>Menu C</label>
+                <br><br><br>
+                <label for="menu_oct4">Select your menu for October 4<sup>th</sup>, 2023: </label>
+                    <br>
+                    <input type="radio" id="oct4_menu0" name="oct4_menu" checked><label>None</label> &emsp; &emsp;
+                    <input type="radio" id="oct4_menuA" name="oct4_menu"><label>Menu A</label> &emsp; &emsp;
+                    <input type="radio" id="oct4_menuB" name="oct4_menu"><label>Menu B</label> &emsp; &emsp;
+                    <input type="radio" id="oct4_menuC" name="oct4_menu"><label>Menu C</label>
+            </fieldset>
+
+        <div class="button">
+            <input type="submit" value="Submit"> &emsp; &emsp;
+            <input type="reset" value="Reset"> 
+        </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <br>
+    <p><b>Contact Person</b></p>
+    <a href="https://wa.me/62895385069010">Ellis Raputri</a>
+</footer>
+</html>
